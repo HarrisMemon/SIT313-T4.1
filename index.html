@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+
+
+.container {
+  padding: 16px;
+  width: 50%;
+  
+  
+}
+
+input{
+width: 50%;
+display: block;
+margin-bottom: 10px;
+}
+
+select{
+  display: block;
+  width: 50%;
+  margin-bottom: 10px;
+}
+
+
+.createbtn {
+  background-color: #12b7e0;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 50%%;
+  opacity: 0.9;
+}
+
+.createbtn:hover {
+  opacity: 1;
+}
+
+</style>
+</head>
+<body>
+
+<form action="/" method="POST">
+  <div class="container">
+    <h1>Register</h1>
+    <p>Create an iService account.</p>
+    <hr>
+
+    <label for="country"><b>Country of residence*</label>
+    <select name="country">
+      <option value="Australia">Australia</option>
+      <option value="USA">USA</option>
+      <option value="Japan">Japan</option>
+      <option value="New Zealand">New Zealand</option>
+    </select>
+    <div style="float: left; margin-right: 20px;">
+      <label for="namefirst"><b>First name*</b></label>
+      <input style="width: 100%;" type="text" placeholder="First Name" name="namefirst" id="namefirst" required>
+    </div>
+    <div style="float: left;">
+      <label for="namelast"><b>Last name*</b></label>
+      <input style="width: 100%;" type="text" placeholder="Last Name" name="namelast" id="namelast" required>
+    </div>
+    <br style="clear: both;">
+
+    <label for="email"><b>Email*</b></label>
+    <input type="text" placeholder="Email" name="email" id="email" required>
+
+    <label for="psw"><b>Password*</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+
+    <label for="pswconf"><b>Confirm Password*</b></label>
+    <input type="password" placeholder="Confirm Password" name="pswconf" id="pswconf" required>
+    
+    <label for="address"><b>Address*</b></label>
+    <input type="text" placeholder="Address" name="address" id="address" required>
+
+    <div style="float: left; margin-right: 20px;">
+      <label for="city"><b>City*</b></label>
+      <input style="width: 100%;" type="text" placeholder="City" name="city" id="city" required>
+    </div>
+    <div style="float: left;">
+      <label for="state"><b>State, Province or Region*</b></label>
+      <input style="width: 100%;" type="text" placeholder="State" name="state" id="state" required>
+    </div>
+
+    <br style="clear: both;">
+
+    <label for="zip"><b>Zip/Post code</b></label>
+    <input  type="text" placeholder="Zip Code" name="zip" id="zip">
+
+    <label for="mobnum"><b>Mobile Number</b></label>
+    <input  type="text" placeholder="Mobile Number" name="mobnum" id="mobnum">
+
+    <button type="submit" class="createbtn">Create Account</button>
+  </div>
+  
+  
+</form>
+
+</body>
+</html>
